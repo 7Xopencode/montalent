@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import FormComponent from "./component/FormComponent";
+import Accueil from "./component/Accueil";
+import Home from "./component/Home";
 
 
 
@@ -14,8 +15,9 @@ function App() {
 
 <BrowserRouter>
       <Routes>
-        <Route path="FormComponent" element={<FormComponent />}>
-        </Route>
+        <Route path="Accueil" element={<Accueil />}> </Route>
+        <Route path="Home" element={<Home />}></Route>
+       
       </Routes>
     </BrowserRouter>
 
